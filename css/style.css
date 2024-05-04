@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body, table{
+    border: 1px solid black;
+    margin: 0px;
+}
+header,nav,section,aside,footer{
+    border: 1px solid black;
+    font-family: sans-serif;
+    text-align: center;
+}
+header{
+    width: 100%;
+    background-color: black;
+    height: 150px;
+}
+nav{
+    width: 20%;
+    float: left;
+    height: 400px;
+    background-color: dimgray;
+}
+section{
+    width: 60%;
+    float: left;
+    height: 400px;
+}
+aside{
+    width: 20%;
+    float: left;
+    height: 400px;
+    background-color: dimgray;
+}
+footer{
+    width: 100%;
+    clear: left;
+}
+
+#logoA{
+    width: 200px;
+    margin: 20px;
+    float: left;
+}
+
+iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px){
+    section{
+        width: 80%;
+    }
+    aside{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    nav,section,aside{
+        width: 100%;
+    }
+}
+
+.navLink{
+    display: block;
+    padding-top: 6px;
+    text-decoration: none;
+    border-bottom: 1px solid darkgray;
+    padding-left: 10px;
+    text-align: left;
+}
+
+a:link{
+    color: darkgray;
+}
+
+a:hover{
+    background-color: darkgray;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 20px 0px 0px 20px;
+    transition: 1.2s;
+    transform: translateX(15px);
+    padding-left: 10px;
+}
+
+a:visited{
+    color: darkgray;
+}
+
+a:active{
+    color:black;
+    box-shadow: 5px 5px 10px black;
+    text-shadow: -2px -2px 4px white;
+}
