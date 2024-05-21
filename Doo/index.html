@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="icon" href="image/logo.png">
+</head>
+
+<body>
+  <header>
+      <button class="openbtn" onclick="openNav()">
+        <i class="fa-solid fa-bars fa-xs" style="color: white;"></i>
+      </button>
+      <a href="index.html"><img class="logo_header" src="image/Logo(white).png" alt="Logo">
+      </a>
+  </header>
+      
+  <main>
+    <section class="banner">
+      <img src="image/background%20with%20mascot.gif" alt="Banner Image">
+      <div class="hero-content">
+        <h1>LET'S DOO IT</h1>
+        <p>BREAK FREE FROM THE ORDINARY</p>
+      </div>
+    </section>
+        
+    <section class="portfolio">
+      <div class="portfolio-content">
+        <h2> PORTFOLIO</h2>
+          <br>
+        <a onclick="changeImages1()" class="artwork-btn">ARTWORK</a>
+         <a onclick="changeImages2()" class="photograph-btn">PHOTOGRAPH</a>
+          </div>
+    
+      <div class="illustration-row-box">
+        <div class="illustration-row">
+          <img src="image/artwork-1.jpg" alt="illustration Image">
+          <img src="image/artwork-2.jpg" alt="illustration Image">
+          <img src="image/artwork-3.jpg" alt="illustration Image">
+          <img src="image/artwork-4.jpg" alt="illustration Image">
+        </div>
+      </div>
+        
+        <div class="more-btn-content">
+       <a href="portfolio.html" class="more-btn">MORE</a>
+       </div>
+    </section>
+  </main>
+    
+    
+   <div id="NavBar" class="sidebar">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <a href="index.html">HOME</a>
+              <br>
+              <br>
+              <br>
+              <a href="about_us.html">ABOUT US</a>
+              <br>
+              <br>
+              <br>
+              <a href="portfolio.html">PORTFOLIO</a>
+              <br>
+              <br>
+              <br>
+              <a href="contact_us.html">CONTACT US</a>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+    </div>
+
+    <footer>
+     <div class="footer-content">
+         <div class="contact-section">
+             <p3>Questions? Ask away!<br>
+             Here's how you can reach us:</p3>
+            <button class="footer-btn">
+             <a href="contact_us.html" style="text-decoration: none; color: white;">Contact Us</a>
+             </button>
+            </div>
+            <div class="social">
+          <p3>You can find us on these <br>
+             platforms too:</p3>
+          <div class="social-content">
+          <div class="social-icon">
+          <a href="https://instagram.com/yourusername" class="fa-brands fa-square-instagram fa-3x" target=”_blank” style="color: white; text-decoration: none;"></a>
+          <a href="https://behance.com/yourusername" class="fa-brands fa-square-behance fa-3x" target=”_blank” style="color: white; text-decoration: none;"></a>
+          <a href="https://dribbble.com/yourusername" class="fa-brands fa-square-dribbble fa-3x" target=”_blank” style="color: white; text-decoration: none;"></a>
+          <a href="https://linkedin.com/yourusername" class="fa-brands fa-linkedin fa-3x" target=”_blank” style="color: white; text-decoration: none;"></a>
+          </div>
+          </div>
+          </div>
+          <div class="copyright-logo">
+          <div class="copyright">
+          <p3>&copy; 2024 Your Doodle Buddy. All rights reserved.</p3>
+          <div class="logo-footer">
+            <a href="index.html"><img src="image/Logo(white).png" alt="Logo">
+            </a>
+          </div>
+         </div>
+        </div>
+       </div>
+        </footer>
+    
+  <script>
+  function openNav() {
+              document.getElementById("NavBar").style.width = "100%";
+              document.getElementById("body").style.marginLeft = "280px";
+            }
+            
+            function closeNav() {
+              document.getElementById("NavBar").style.width = "0";
+              document.getElementById("body").style.marginLeft= "0";
+            }
+
+
+    var state = 1;
+
+    function changeImages1() {
+        var images;
+        
+        if (state === 1) {
+            images = [
+              'image/artwork-1.jpg',
+              'image/artwork-2.jpg',
+              'image/artwork-3.jpg',
+              'image/artwork-4.jpg'
+            ];
+            state = 2;
+        } else {
+            images = [
+              'image/artwork-1.jpg',
+              'image/artwork-2.jpg',
+              'image/artwork-3.jpg',
+              'image/artwork-4.jpg'
+            ];
+            state = 1;
+        }
+
+        var imgElements = document.querySelectorAll('.illustration-row-box .illustration-row img');
+
+        imgElements.forEach(function(img, index) {
+            img.src = images[index];
+        });
+    }
+      
+          function changeImages2() {
+        var images;
+        
+        if (state === 1) {
+           images = [
+              'image/photography-1.jpg',
+              'image/photography-2.jpg',
+              'image/photography-3.jpg',
+              'image/photography-4.jpg'
+            ];
+            state = 2;
+        } else {
+           images = [
+              'image/photography-1.jpg',
+              'image/photography-2.jpg',
+              'image/photography-3.jpg',
+              'image/photography-4.jpg'
+            ];
+
+            state = 1;
+        }
+
+        var imgElements = document.querySelectorAll('.illustration-row-box .illustration-row img');
+
+        imgElements.forEach(function(img, index) {
+            img.src = images[index];
+        });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,754 @@
+/* ================================================ */
+/* Font import */
+@font-face {
+    font-family: Cocogoose;
+    src: url(../Cocogoose.ttf);
+}
+
+@font-face {
+    font-family: MyriadPro;
+    src: url(../MyriadPro.otf);
+}
+
+/* ================================================ */
+/* Main Component */
+
+body
+{
+    margin: auto;
+    width: 100%;   
+}
+
+/* ================================================ */
+/* Header & Logo */
+header
+{
+    position: relative;
+    height: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.logo_header
+{
+    position: fixed;
+    top: 30px;
+    left: 50px;
+    z-index: 1000;
+}
+
+/* ================================================ */
+/* Navigation Bar */
+
+.openbtn
+{
+    position: fixed;
+    cursor: pointer; 
+    background-color: transparent;
+    border: none;
+    top: 15px;
+    right: 50px;
+    font-size: 50px;
+    margin-left: 150px;
+    z-index: 1;
+    /* top: 30px;
+    left: 1450px; */
+  
+}
+  
+.openbtn:hover
+{
+    background-color: #444;
+}
+  
+  
+.sidebar
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidebar a
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: Cocogoose;
+    font-size: 25pt;
+    text-align: center;
+    color: #fd9b2e;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover 
+{
+    color: #f1f1f1;
+}
+  
+.sidebar .closebtn 
+{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 50px;
+    margin-left: 150px;
+}
+
+/* ================================================ */
+/* Banner Title */
+
+.banner_title_container
+{
+    width: 100%;
+}
+
+.banner_title_text
+{
+    font-family: Cocogoose;
+    font-size: 35pt;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ================================================ */
+/* Banner Desc */
+
+.banner_desc_container
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner_img
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.banner_img img
+{
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+}
+
+.banner_content_name,
+.banner_content_text
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.banner_content_name,
+.banner_content_text
+{
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.name
+{
+    font-family: MyriadPro;
+    font-size: 18pt;
+    width: 100%;
+    text-align: center;
+}
+
+.text
+{
+    font-family: MyriadPro;
+    font-size: 14pt;
+    width: 100%;
+    text-align: center;
+}
+
+/* ================================================ */
+/* Expertise Section */
+.expertise_container
+{
+    width: 100%;
+    margin: 10% 0 0 0;
+}
+
+.expertise_title
+{
+    font-family: Cocogoose;
+    font-size: 20pt;
+    color: #fd9b2e;
+    text-align: center;
+}
+
+.road_img
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: absolute;
+}
+
+.skill_container
+{
+    position: relative;
+    text-align: center;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th
+{
+    padding: 55px 0 0 200px;
+}
+
+td
+{
+    padding: 35px 0 0 200px;
+    text-align: left;
+}
+
+.table_bottom
+{
+    margin-top: 300px;
+}
+
+.skill_title
+{
+    font-family: Cocogoose;
+    font-size: 16pt;
+    text-align: left;
+}
+
+.skill_content
+{
+    font-family: MyriadPro;
+    font-size: 14pt;
+}
+
+/* ================================================ */
+/* Expectations section */
+.expect
+{
+    background-color:black;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.expect_title
+{
+    font-family: Cocogoose;
+    font-size: 15pt;
+    color: white;
+    padding-top: 7%;
+    letter-spacing: 0.1em;
+    padding-left: 150px;
+}
+
+.expect_container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-bottom: 150px;
+    margin: 0 100px;
+}
+
+.expect_box
+{
+    background-color: transparent;
+    height: 100px;
+    border-radius: 48px;
+    cursor: pointer;
+}
+
+.expect_box, .expect_info
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 50px;
+}
+
+.expect_info h5{
+    font-family: Cocogoose;
+    font-size: 17pt;
+    margin-bottom: 16px;
+    color: #fd9b2e;
+}
+
+.expect_info p{
+    font-family: MyriadPro;
+    font-size: 12pt;
+    max-height: 100px;
+    margin: auto;
+    color: #fd9b2e;
+}
+
+/* ================================================ */
+/* Footer */
+.footer_content
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: MyriadPro; 
+    width: 100%;
+    padding: 50px 0;
+}
+
+.button
+{
+    appearance: button;
+    backface-visibility: hidden;
+    background-color: #fd9b2e;
+    border-radius: 6px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: MyriadPro;
+    font-size: 100%;
+    height: 44px;
+    line-height: 1.15;
+    outline: none;
+    overflow: hidden;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+.button-9:disabled
+{
+  cursor: default;
+}
+
+.social_icon
+{
+    font-family: MyriadPro;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.copyright_logo
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_footer
+{
+    position: relative;
+    top: 40px;
+}
+
+/* ================================================ */
+/* Responsive layout */
+/* For screens smaller than 1920px (desktop) */
+/* @media (max-width: 1920px) {
+    .logo_header {
+        left: 20px;
+    }
+
+    .banner_title_text {
+        font-size: 40pt;
+    }
+
+    .banner_content_name,
+    .banner_content_text {
+        flex-direction: row;
+        padding: 0 125px;
+    }
+    .name
+    {
+        font-size: 22pt;
+        margin: 20px 0;
+    }
+
+    .text
+    {
+        font-size: 18pt;
+    }
+
+    .banner_img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .expertise_title {
+        font-size: 30pt;
+        margin-top: 200px;
+    }
+
+    .expertise_container {
+        margin: 0 auto;
+    }
+
+    .skill_container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    table
+    {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    th
+    {
+        padding: 50px 0 0 250px;
+    }
+
+    td
+    {
+        padding: 30px 0 0 250px;
+    }
+
+    .table_bottom
+    {
+        margin-top: 450px;
+    }
+
+    .skill_title
+    {
+        font-size: 22pt;
+    }
+
+    .skill_content
+    {  
+        font-size: 19pt;
+    }
+
+    .expect_title {
+        padding-left: 150px;
+        font-size: 25pt;
+    }
+
+    .expect_container {
+        margin: 0 50px;
+    }
+
+    .expect_box,
+    .expect_info {
+        padding: 100px 70px 100px 70px;
+    }
+
+    .expect_info h5{
+        font-size: 18pt;
+        margin-bottom: 16px;
+    }
+    
+    .expect_info p{
+        font-size: 16pt;
+    }
+
+    .logo_footer {
+        margin: 0 85%;
+    }
+
+    .contact_section p,
+    .social p,
+    .copyright p {
+        font-size: 14pt;
+    }
+
+    .social_icon {
+        gap: 20px;
+    }   
+} */
+
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+    .logo_header {
+        left: 20px;
+    }
+
+    .banner_title_text {
+        font-size: 40px;
+    }
+
+    .banner_content_name,
+    .banner_content_text {
+        flex-direction: row;
+        padding: 0 10px 0 10px;
+    }
+    .name
+    {
+        font-size: 15pt;
+        margin: 10px 20px;
+    }
+
+    .text
+    {
+        font-size: 11pt;
+    }
+
+    .banner_img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .expertise_title {
+        font-size: 18px;
+    }
+
+    .expertise_container {
+        margin: 0 auto;
+    }
+
+    .skill_container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    table
+    {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    th
+    {
+        padding: 25px 0 0 120px;
+    }
+
+    td
+    {
+        padding: 10px 0 0 120px;
+    }
+
+    .table_bottom
+    {
+        margin-top: 180px;
+    }
+
+    .skill_title
+    {
+        font-size: 8pt;
+    }
+
+    .skill_content
+    {  
+        font-size: 6pt;
+    }
+
+    .expect_title {
+        padding-left: 50px;
+        font-size: 12pt;
+    }
+
+    .expect_container {
+        margin: 0 50px;
+    }
+
+    .expect_box,
+    .expect_info {
+        padding: 50px 5px 35px 5px;
+    }
+
+    .expect_info h5{
+        font-size: 10pt;
+        margin-bottom: 16px;
+    }
+    
+    .expect_info p{
+        font-size: 8pt;
+    }
+
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_footer {
+        top: 10px;
+    }
+
+    .contact_section p {
+        font-size: 12pt;
+    }
+
+    .social_icon {
+        gap: 10px;
+    }   
+
+    .button {
+        height: 40px;
+    }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .logo_header {
+        left: 10px;
+        margin: 0 auto;
+    }
+
+    .openbtn {
+        right: 20px;
+    }
+
+    .banner_title_text {
+        font-size: 25px;
+    }
+
+    .banner_content_name,
+    .banner_content_text {
+        flex-direction: row;
+        padding: 0 5px 0 5px;
+    }
+    .name
+    {
+        font-size: 12pt;
+        margin: 10px 20px;
+    }
+
+    .text
+    {
+        font-size: 11pt;
+        margin: 0 15px;
+    }
+
+    .banner_img img {
+        width: 125px;
+        height: 125px;
+        padding-right: 10px;
+    }
+
+    .expertise_title {
+        font-size: 18px;
+    }
+
+    .expertise_container {
+        margin: 0 auto;
+    }
+
+    .skill_container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    table
+    {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    th
+    {
+        padding: 25px 0 0 75px;
+    }
+
+    td
+    {
+        padding: 10px 0 0 75px;
+    }
+
+    .table_bottom
+    {
+        margin-top: 50px;
+    }
+
+    .skill_title
+    {
+        font-size: 7pt;
+    }
+
+    .skill_content
+    {  
+        font-size: 5pt;
+    }
+
+    .expect_title {
+        padding-left: 50px;
+        font-size: 12pt;
+    }
+
+    .expect_container {
+        margin: 0 50px;
+    }
+
+    .expect_box,
+    .expect_info {
+        padding: 50px 5px 35px 5px;
+    }
+
+    .expect_info h5{
+        font-size: 10pt;
+        margin-bottom: 16px;
+    }
+    
+    .expect_info p{
+        font-size: 8pt;
+    }
+
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo_footer {
+        margin: 0 40%;
+    }
+
+    .contact_section p {
+        font-size: 12pt;
+    }
+
+    .social_icon {
+        gap: 20px;
+    }   
+
+    .button {
+        height: 40px;
+    }
+
+    .contact_section p,
+    .social p,
+    .copyright p {
+        font-size: 12pt;
+    }
+
+    .copyright {
+        margin-top: 10px;
+    }
+
+    .logo_footer {
+        top: 10px;
+    }
+}
