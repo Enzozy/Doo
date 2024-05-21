@@ -80,16 +80,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Event listener for the Photographs button
     document.getElementById("photographsBtn").addEventListener("click", () => {
         const photographImagePaths = [
-            "image/photographs/photo_1.JPG",
-            "image/photographs/photo_2.JPG",
-            "image/photographs/photo_3.JPG",
-            "image/photographs/photo_4.JPG",
-            "image/photographs/photo_5.JPG",
-            "image/photographs/photo_6.JPG",
-            "image/photographs/photo_7.JPG",
-            "image/photographs/photo_8.JPG",
-            "image/photographs/photo_9.JPG",
-            "image/photographs/photo_10.JPG"
+            "image/photographs/photo_1.jpg",
+            "image/photographs/photo_2.jpg",
+            "image/photographs/photo_3.jpg",
+            "image/photographs/photo_4.jpg",
+            "image/photographs/photo_5.jpg",
+            "image/photographs/photo_6.jpg",
+            "image/photographs/photo_7.jpg",
+            "image/photographs/photo_8.jpg",
+            "image/photographs/photo_9.jpg",
+            "image/photographs/photo_10.jpg"
         ];
 
         const photographTitles = [
