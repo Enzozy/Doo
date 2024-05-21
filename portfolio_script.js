@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Event listener for the Photographs button
     document.getElementById("photographsBtn").addEventListener("click", () => {
         const photographImagePaths = [
-            ".../photographs/photo_1.jpg",
+            "image/photographs/photo_1.jpg",
             "image/photographs/photo_2.jpg",
             "image/photographs/photo_3.jpg",
             "image/photographs/photo_4.jpg",
